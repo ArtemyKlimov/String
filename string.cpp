@@ -142,14 +142,14 @@ char String::at(size_t index) const{
 }
 char String::back() const{
 	if(s_len == 0){
-		throw std::out_of_range("back(): string is empty");//???????????
+		throw std::out_of_range("back(): string is empty");
 	}
 	return str[s_len-1];
 
 }
 char String::front() const{
 	if(s_len == 0){
-		throw std::out_of_range("back(): string is empty");//???????????
+		throw std::out_of_range("front(): string is empty");
 	}
 	return str[0];
 }
